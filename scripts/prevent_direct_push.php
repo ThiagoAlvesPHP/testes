@@ -8,7 +8,7 @@ if (preg_match('/refs\/heads\/(.+)/', $input, $matches)) {
     $branch = $matches[1];
 
     // Lista de branches protegidos
-    $protectedBranches = ['stage', 'homolog', 'master'];
+    $protectedBranches = ['stage', 'homolog', 'main'];
 
     // Verifica se o branch está protegido
     if (in_array($branch, $protectedBranches, true)) {
