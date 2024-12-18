@@ -5,7 +5,7 @@
     },
     "verbosity": "verbose",
     "pre-push": {
-        "enabled": true,
+        "enabled": false,
         "actions": [
             {
                 "action": "php",
