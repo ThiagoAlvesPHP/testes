@@ -1,0 +1,18 @@
+{
+    "preset":"laravel",
+    "rules":{
+        "array_syntax":{"syntac":"short"},
+        "new_with_parentheses":true,
+        "indentation_tabs":true,
+        "new_with_braces":true,
+        "single_quote":true,
+        "no_unused_imports":true,
+        "combine_consecutive_unsets":true,
+        "combine_consecutive_issets":true,
+        "declare_strict_types":true,
+        "explicit_string_variable":true,
+        "fully_qualified_strict_types":true,
+        "line_length":true,
+        "statements_indentation":false
+    }
+}
