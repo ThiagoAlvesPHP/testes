@@ -22,10 +22,10 @@
       "enabled": true,
       "actions": [
         {
-          "action": "vendor/bin/captainhook",
-          "options": {
-            "branches-to-protect": ["main", "homolog", "stage"]
-          }
+            "action": "\\CaptainHook\\App\\Hook\\Branch\\PreventPushOfFixupAndSquashCommits",
+            "options": {
+                "branches-to-protect": ["main", "homolog", "stage"]
+            }
         }
       ]
     }
