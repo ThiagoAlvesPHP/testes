@@ -1,0 +1,20 @@
+{
+    "pre-push": {
+        "enabled": true,
+        "actions": []
+    },
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "vendor\\bin\\pest"
+            },
+            {
+                "action": "vendor\\bin\\pest"
+            },
+            {
+                "action": "vendor\\bin\\phpstan"
+            }
+         ]
+    }
+}

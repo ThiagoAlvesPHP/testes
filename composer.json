@@ -14,7 +14,9 @@
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
+        "captainhook/captainhook-phar": "^5.24",
         "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^3.0",
         "laravel/pail": "^1.1",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.39",
@@ -66,6 +68,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "captainhook/captainhook-phar": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }
