@@ -15,10 +15,10 @@
                 "action": "vendor/bin/pest"
             },
             {
-                "action": "vendor/bin/pest"
+                "action": "vendor/bin/pint"
             },
             {
-                "action": "vendor/bin/phpstan"
+                "action": "vendor/bin/phpstan analyse app --memory-limit=2G"
             }
          ]
     }
