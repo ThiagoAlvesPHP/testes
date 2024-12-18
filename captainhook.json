@@ -6,7 +6,14 @@
     "verbosity": "verbose",
     "pre-push": {
         "enabled": true,
-        "actions": []
+        "actions": [
+            {
+                "action": "php",
+                "options": {
+                    "script": "scripts/prevent_direct_push.php"
+                }
+            }
+        ]
     },
     "pre-commit": {
         "enabled": true,
