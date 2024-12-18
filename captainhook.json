@@ -1,4 +1,8 @@
 {
+    "config":{
+        "verbosity":"verbose"
+    },
+    "verbosity": "verbose",
     "pre-push": {
         "enabled": true,
         "actions": []
@@ -7,13 +11,13 @@
         "enabled": true,
         "actions": [
             {
-                "action": "vendor\\bin\\pest"
+                "action": "vendor/bin/pest"
             },
             {
-                "action": "vendor\\bin\\pest"
+                "action": "vendor/bin/pest"
             },
             {
-                "action": "vendor\\bin\\phpstan"
+                "action": "vendor/bin/phpstan"
             }
          ]
     }
