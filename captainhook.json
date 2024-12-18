@@ -5,15 +5,14 @@
     },
     "verbosity": "verbose",
     "pre-push": {
-        "enabled": true,
-        "actions": [
-            {
-                "action": "php",
-                "options": {
-                    "script": "scripts/prevent_direct_push.php"
-                }
-            }
-        ]
+      "actions": [
+        {
+          "run": "CaptainHook::Branch.PreventPushOfFixupAndSquashCommits",
+          "options": {
+            "branches-to-protect": ["main", "homolog", "stage"]
+          }
+        }
+      ]
     },
     "pre-commit": {
         "enabled": true,
