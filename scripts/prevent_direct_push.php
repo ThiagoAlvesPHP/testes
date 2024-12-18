@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // Lê a entrada do Git enviada ao hook
 $stdin = fopen('php://stdin', 'r');
 $protectedBranches = ['stage', 'homolog', 'master'];
