@@ -4,16 +4,6 @@
         "verbosity":"verbose"
     },
     "verbosity": "verbose",
-    "pre-push": {
-      "actions": [
-        {
-          "run": "CaptainHook::Branch.PreventPushOfFixupAndSquashCommits",
-          "options": {
-            "branches-to-protect": ["main", "homolog", "stage"]
-          }
-        }
-      ]
-    },
     "pre-commit": {
         "enabled": true,
         "actions": [
@@ -27,5 +17,16 @@
                 "action": "vendor/bin/phpstan analyse app --memory-limit=2G"
             }
          ]
+    },
+    "pre-push": {
+      "enabled": true,
+      "actions": [
+        {
+          "action": "vendor/bin/captainhook",
+          "options": {
+            "branches-to-protect": ["main", "homolog", "stage"]
+          }
+        }
+      ]
     }
 }
