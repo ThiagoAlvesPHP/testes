@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // Captura a referência do branch de destino
 $input = file_get_contents('php://stdin');
 if (preg_match('/refs\/heads\/(.+)/', $input, $matches)) {
