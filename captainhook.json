@@ -1,5 +1,6 @@
 {
     "config":{
+        "fail-on-first-error": false,
         "verbosity":"verbose"
     },
     "verbosity": "verbose",
