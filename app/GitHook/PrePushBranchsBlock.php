@@ -25,10 +25,9 @@ class PrePushBranchsBlock implements HookAction
         // Adicione lógica para bloquear branches específicas
         $blockedBranches = ['main', 'homolog']; // Branches que devem ser bloqueadas
         if (in_array($currentBranch, $blockedBranches, true)) {
-            $io->writeError("<info>Push para a branch '{$currentBranch} não é permitido.'.</info>");
+            $io->writeError("<error>Push para a branch '{$currentBranch} não é permitido.'.</error>");
             //            throw new \RuntimeException('Erro: mensagem de commit vazia.');
-            $action->isFailureAllowed(true);
-//            abort(403);
+//            $io->writeError('<error>Commit rejeitado: A mensagem de commit não pode estar vazia. Por favor, adicione uma descrição significativa.</error>');
         }
 
         // Mensagem para confirmar que a branch é permitida
