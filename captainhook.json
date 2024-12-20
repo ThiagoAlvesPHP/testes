@@ -8,7 +8,7 @@
         "enabled": true,
         "actions": [
             {
-                "action": "\\App\\GitHook\\PrePushBranchsBlock",
+                "action": "\\App\\GitHook\\NoEmptyCommitMessages",
                 "type": "php"
             }
         ]
@@ -31,7 +31,8 @@
         "enabled": true,
         "actions": [
             {
-                "action": "scripts\\pre-push.sh"
+                "action": "\\App\\GitHook\\PrePushBranchsBlock",
+                "type": "php"
             }
         ]
     }

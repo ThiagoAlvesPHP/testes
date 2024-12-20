@@ -22,6 +22,9 @@ class NoEmptyCommitMessages implements HookAction
         $message = $repository->getCommitMsg();
         if (empty($message->getContent())) {
             throw new \Exception('Commit rejeitado: A mensagem de commit não pode estar vazia. Por favor, adicione uma descrição significativa.');
+            // Exibe a mensagem de erro personalizada
+//            $io->write('<error>Commit rejeitado: A mensagem de commit não pode estar vazia. Por favor, adicione uma descrição significativa.</error>');
+//            exit(1);
         }
     }
 }
