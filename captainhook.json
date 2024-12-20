@@ -19,14 +19,14 @@
          ]
     },
     "pre-push": {
-      "enabled": true,
-      "actions": [
-        {
-            "action": "\\CaptainHook\\App\\Hook\\Branch\\PreventPushOfFixupAndSquashCommits",
-            "options": {
-                "branches-to-protect": ["main", "homolog", "stage"]
+        "enabled": true,
+        "actions": [
+            {
+                "action": "bash",
+                "options": {
+                    "script": "scripts/pre-push.sh"
+                }
             }
-        }
-      ]
+        ]
     }
 }
