@@ -14,6 +14,7 @@
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
+        "captainhook/captainhook": "^5.24",
         "captainhook/captainhook-phar": "^5.24",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^3.0",

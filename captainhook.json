@@ -4,6 +4,15 @@
         "verbosity":"verbose"
     },
     "verbosity": "verbose",
+    "commit-msg": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "\\App\\GitHook\\PrePushBranchsBlock",
+                "type": "php"
+            }
+        ]
+    },
     "pre-commit": {
         "enabled": true,
         "actions": [
@@ -22,10 +31,7 @@
         "enabled": true,
         "actions": [
             {
-                "action": "bash",
-                "options": {
-                    "script": "scripts/pre-push.sh"
-                }
+                "action": "scripts\\pre-push.sh"
             }
         ]
     }
