@@ -8,9 +8,9 @@
         "enabled": true,
         "actions": [
             {
-                "action": "php",
+                "action": "bash",
                 "options": {
-                    "script": "scripts/prevent_direct_push.php"
+                    "script": "scripts/pre-push.sh"
                 }
             }
         ]
