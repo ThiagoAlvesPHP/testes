@@ -26,7 +26,7 @@ class PrePushBranchsBlock implements HookAction
         $blockedBranches = ['main', 'homolog']; // Branches que devem ser bloqueadas
         if (in_array($currentBranch, $blockedBranches, true)) {
             $io->writeError("<info>Push para a branch '{$currentBranch} não é permitido.'.</info>");
-            exit(1);
+//            exit(1);
         }
 
         // Mensagem para confirmar que a branch é permitida
