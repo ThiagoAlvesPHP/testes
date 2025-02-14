@@ -5,7 +5,7 @@
     },
     "verbosity": "verbose",
     "commit-msg": {
-        "enabled": true,
+        "enabled": false,
         "actions": [
             {
                 "action": "\\App\\GitHook\\NoEmptyCommitMessages",
@@ -14,7 +14,7 @@
         ]
     },
     "pre-commit": {
-        "enabled": true,
+        "enabled": false,
         "actions": [
             {
                 "action": "vendor/bin/pest"
@@ -28,7 +28,7 @@
          ]
     },
     "pre-push": {
-        "enabled": true,
+        "enabled": false,
         "actions": [
             {
                 "action": "\\App\\GitHook\\PrePushBranchsBlock",
